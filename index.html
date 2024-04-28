@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!--===========Favicon link===========-->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+
+    <!--===========Custom css  link===========-->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor|Pricing component with toggle</title>
+  </head>
+  <body>
+    <!--=========Main container===========-->
+
+    <div class="main-container">
+      <h1 class="pricing-title text-align">Our Pricing</h1>
+
+      <div class="toggle-component flex-justify-center">
+        <input type="checkbox" name="" id="toggle" class="toggle" />
+
+        <label class="annually" for="toggle">Annually</label>
+
+        <button class="toggle-button">
+          <label class="toggle-ball" tabindex="1" for="toggle"></label>
+        </button>
+
+        <label class="monthly" for="toggle">Monthly</label>
+      </div>
+
+      <div class="card-container grid">
+        <div class="card card-bg-light grid">
+          <p class="card-category text-align">Basic</p>
+
+          <div class="card-price flex-justify-center">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price" data-annual-price>199.99 </span>
+
+            <span class="price" data-monthly-price> 19.99 </span>
+          </div>
+
+          <ul class="card-feature-list text-align">
+            <li>500 GB Storage</li>
+
+            <li>2 Users Allowed</li>
+
+            <li>Send up to 3 GB</li>
+          </ul>
+
+          <button class="card-btn clr-gradient">LEARN MORE</button>
+        </div>
+
+        <div class="card card-bg-gradient grid">
+          <p class="card-category text-align">Professional</p>
+
+          <div class="card-price flex-justify-center">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price" data-annual-price>249.99 </span>
+
+            <span class="price" data-monthly-price>24.99 </span>
+          </div>
+
+          <ul class="card-feature-list text-align">
+            <li>1 TB Storage</li>
+
+            <li>5 Users Allowed</li>
+
+            <li>Send up to 10 GB</li>
+          </ul>
+
+          <button class="card-btn clr-light">LEARN MORE</button>
+        </div>
+
+        <div class="card card-bg-light grid">
+          <p class="card-category text-align">Master</p>
+
+          <div class="card-price flex-justify-center">
+            <span class="dollar-sign">&dollar;</span>
+            <span class="price" data-annual-price>399.99 </span>
+
+            <span class="price" data-monthly-price>39.99 </span>
+          </div>
+
+          <ul class="card-feature-list text-align">
+            <li>2 TB Storage</li>
+
+            <li>10 Users Allowed</li>
+
+            <li>Send up to 20 GB</li>
+          </ul>
+
+          <button class="card-btn clr-gradient">LEARN MORE</button>
+        </div>
+      </div>
+    </div>
+
+    <!--===========Custom script link===========-->
+
+    <script src=""></script>
+  </body>
+</html>

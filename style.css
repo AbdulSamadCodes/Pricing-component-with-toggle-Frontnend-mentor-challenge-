@@ -1,0 +1,309 @@
+/*=============Montserrat font family link=========*/
+
+@import url("https://fonts.googleapis.com/css2?family=Abel&family=Alata&family=Arvo:wght@700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Commissioner:wght@100..900&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Epilogue:ital,wght@0,100..900;1,100..900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:wght@100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Jost:ital,wght@0,100..900;1,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=League+Spartan:wght@100..900&family=Lexend+Deca:wght@100..900&family=Lora&family=Manrope:wght@200..800&family=Merriweather:wght@300&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@400;800&family=Overpass:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:wght@500;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Red+Hat+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Grotesk&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+
+/*=========================Custom Properties========================*/
+
+:root {
+  /*=====Colors==========*/
+
+  --linear-gradient: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+
+  --very-light-grayish-blue: hsl(240, 78%, 98%);
+  --light-grayish-blue: hsl(234, 14%, 74%);
+  --grayish-blue: hsl(233, 13%, 49%);
+  --dark-grayish-blue: hsl(232, 13%, 33%);
+  ---color-purple: hsl(237, 63%, 64%);
+
+  /*=====Typography======*/
+
+  --font-family-Montserrat: "Montserrat", sans-serif;
+}
+
+/*=========================Reset===========================*/
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+button,
+a,
+span,
+input {
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+label {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 30px;
+  scrollbar-width: thin;
+}
+
+body {
+  background-color: var(--very-light-grayish-blue);
+  font-size: 15px;
+  font-family: var(--font-family-Montserrat);
+  background-image: url("/images/bg-top.svg");
+  background-repeat: no-repeat;
+  background-position: right top;
+}
+
+/*=========================Reused styles===========================*/
+
+.main-container {
+  padding: 30px 20px;
+  max-width: 375px;
+  margin-inline: auto;
+}
+
+.text-align {
+  --position: center;
+
+  text-align: var(--position);
+}
+
+.flex-items-center {
+  display: flex;
+  align-items: center;
+}
+
+.flex-space-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-justify-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.annually,
+.monthly {
+  color: var(--light-grayish-blue);
+  font-weight: 600;
+}
+
+.card-bg-light {
+  background-color: #fff;
+}
+
+.card-bg-gradient {
+  background: var(--linear-gradient);
+}
+
+.card {
+  border-radius: 10px;
+  padding: 25px;
+  gap: 20px;
+}
+
+.card-category,
+.price,
+.dollar-sign {
+  color: var(--dark-grayish-blue);
+}
+
+.card-btn.clr-light {
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
+}
+
+.card-btn.clr-gradient {
+  background: var(--linear-gradient);
+  color: #fff;
+}
+
+/*=========================Main styles===========================*/
+
+.pricing-title {
+  color: var(--dark-grayish-blue);
+}
+
+/*=========Toggle component======*/
+
+.toggle-component {
+  margin-block-start: 30px;
+}
+
+.toggle {
+  visibility: hidden;
+  position: absolute;
+}
+
+.toggle-component {
+  gap: 25px;
+}
+
+.toggle-button {
+  position: relative;
+  width: 50px;
+  background: var(--linear-gradient);
+  height: 25px;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.toggle-ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--very-light-grayish-blue);
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%);
+  border-radius: 50%;
+}
+
+.toggle-ball:focus {
+  right: 2px;
+  left: unset;
+  outline: none;
+}
+
+.toggle-ball:not(:focus) {
+  left: 2px;
+  right: unset;
+  outline: none;
+}
+
+.toggle-component:has(.toggle-ball:focus) .toggle-button {
+  background: linear-gradient(
+    to right,
+    hsla(236, 72%, 79%, 0.6),
+    hsla(237, 63%, 64%, 0.6)
+  );
+}
+
+/*========Cards========*/
+
+.card-container {
+  margin-block-start: 30px;
+  gap: 20px;
+}
+
+.card-category {
+  font-weight: 700;
+  font-size: 18px;
+}
+.toggle-component:has(.toggle-ball:focus)
+  + .card-container
+  .card
+  [data-monthly-price] {
+  display: block;
+}
+
+.toggle-component:has(.toggle-ball:not(:focus))
+  + .card-container
+  .card
+  [data-monthly-price],
+.toggle-component:has(.toggle-ball:focus)
+  + .card-container
+  .card
+  [data-annual-price] {
+  display: none;
+}
+
+.price {
+  font-weight: 700;
+  font-size: 60px;
+}
+
+.dollar-sign {
+  font-size: 26px;
+  font-weight: 700;
+}
+
+.card-feature-list > li {
+  padding-block: 15px;
+  font-weight: 700;
+  color: var(--grayish-blue);
+  border-block: 0.1px solid rgba(212, 206, 206, 0.4);
+}
+
+.card-btn {
+  padding: 12px;
+  border-radius: 6px;
+  font-weight: 800;
+  letter-spacing: 1.2px;
+  font-family: var(--font-family-Montserrat);
+}
+
+.card-bg-gradient > .card-category,
+.card-bg-gradient .price,
+.card-bg-gradient .dollar-sign {
+  color: #fff;
+}
+
+.card-bg-gradient .card-feature-list > li {
+  color: var(--very-light-grayish-blue);
+  border-block: 0.1px solid hsl(240, 78%, 98%, 0.6);
+}
+
+/*============Media queries=======*/
+
+@media (min-width: 992px) {
+  body {
+    background-image: url("/images/bg-top.svg"), url("/images/bg-bottom.svg");
+    background-position: right top, left bottom;
+  }
+
+  .main-container {
+    max-width: 900px;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr 0.9fr 1fr;
+    gap: 0;
+    align-items: start;
+    margin-block-start: 50px;
+  }
+
+  .card-bg-gradient {
+    padding-block: 40px;
+    margin-block-start: -20px;
+  }
+}
